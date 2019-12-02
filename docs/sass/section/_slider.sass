@@ -1,0 +1,94 @@
+.slider-wrapper
+	position: relative
+	&:after, &:before
+		position: absolute
+		content: ""
+		bottom: 15px
+		top: 80%
+		width: 30%
+		box-shadow: 0 15px 10px #777
+	&:after
+		right: 15px
+		left: auto
+		transform: rotate(3deg)
+	&:before
+		right: auto
+		left: 15px
+		transform: rotate(-3deg)
+.slider-row
+	display: flex
+	margin-top: 6px
+	div
+		margin-left: 6px
+	div:first-child
+		margin-left: 0px
+	img
+		height: 100%
+.color-card
+	position: relative
+	display: flex
+	justify-content: center
+	div
+		position: absolute
+		align-self: center
+		color: #3f7311
+		font-family: Impact
+		font-size: 30px
+		line-height: 22px
+		font-weight: 400
+	.red-text
+		color: #871401
+.slider-prev, .slider-next
+	position: absolute
+	width: 68px
+	height: 55px
+	top: 35%
+	z-index: 999
+	cursor: pointer
+.slider-prev
+	left: -10px
+.slider-next
+	right: -10px
+.slider-img
+	transition: 0.2s ease-in
+	position: relative
+	&:hover .block-hover
+		opacity: 1
+	.card-button
+		color: #fff
+.block-hover
+	opacity: 0
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin-left: 0!important
+	background-color: rgba(0, 0, 0, .8)
+	transition: 0.2s ease-in
+	a
+		position: absolute
+		width: 17%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%) 
+		margin-left: 0
+.block-hover--big
+	display: none
+	position: absolute
+	bottom: 20px
+	right: 20px
+	width: 45%
+	height: 65%
+	background-color: rgba(0, 0, 0, .8)
+	color: #FFF
+	text-align: left
+	padding: 30px
+	h2
+		font-family: "Chunk Five"
+		font-size: 24px
+		line-height: 22px
+	p
+		font-size: 12px
+	@media(min-width:992px)
+		display: block

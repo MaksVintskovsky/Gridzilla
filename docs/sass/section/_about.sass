@@ -1,0 +1,99 @@
+.main-text
+	font-weight: 500
+	line-height: 16px
+.about
+	font-size: 12px
+	color: #414141
+	p, blockquote
+		text-align: left
+		line-height: 18px
+	blockquote
+		position: relative
+		font-style: italic
+		padding: 0 35px
+		&:before
+			position: absolute
+			left: 0px
+			top: -10px
+			content: "\201D"
+			font-size: 72px
+			font-style: normal
+			line-height: 20px
+			color: $red
+			transform: rotate(180deg) 
+	&-main-man
+		margin-top: 25px
+		&-foto
+			float: left
+			margin: 0px 100px 0px 0
+			@media(min-width:380px)
+				margin: 0px 20px 0px 0
+			@media(min-width:580px)
+				margin: 0px 40px 0px 0	
+.first-letter:first-letter 
+    float: left
+    font-size: 36px
+    font-weight: 700 
+    color: $red
+    padding-top: 8px
+    margin-right: 5px
+.buttons
+	text-align: left
+	margin-top: 20px
+	a:hover
+		color: #FFF 
+.green 
+	background-color: $green
+	&:hover
+		background: lighten($green, 10%)
+.gray 
+	background-color: $gray-600
+	&:hover
+		background: lighten($gray-600, 10%)
+.blue 
+	background-color: $blue
+	&:hover
+		background: lighten($blue, 10%)
+.orange 
+	background-color: $orange
+	&:hover
+		background: lighten($orange, 10%)
+.violet
+	background-color: $violet
+	&:hover
+		background: lighten($violet, 10%)
+.red 
+	background-color: $red
+	&:hover
+		background: lighten($red, 10%)
+.cyan
+	background-color: $cyan
+	&:hover
+		background: lighten($cyan, 10%)
+.allerts
+	padding-bottom: 20px
+.allert-message
+	font-size: 14px
+	font-style: italic
+	padding: 20px
+	margin: 20px 0 0
+.allert-green
+	border: 1px solid #98c601
+	color: #98c601
+	background: lighten(#98c601, 40%)
+.allert-red
+	border: 1px solid $red
+	color: $red
+	background: lighten($red, 30%)
+.allert-orange
+	border: 1px solid #fab418
+	color: #fab418
+	background: lighten(#fab418, 30%)
+.allert-blue
+	border: 1px solid $blue
+	color: $blue
+	background: lighten($blue, 20%)
+	
+
+
+	

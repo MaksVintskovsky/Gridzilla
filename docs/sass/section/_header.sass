@@ -1,0 +1,113 @@
+.page-wrapper
+	max-width: 1400px
+	margin-left: auto
+	margin-right: auto
+	background-color: #fcfcfc
+	padding-top: 0
+	@media(min-width:580px)
+		padding-top: 20px
+.logo-wrapper
+	position: relative
+	display: block
+	width: 180px
+	justify-content: space-between
+	// margin-bottom: 40px
+	@media(min-width:580px)
+		display: flex
+		width: auto
+	@media(min-width:768px)
+		margin-bottom: 16px
+.logo 
+	font-family: 'Chunk Five'
+	font-size: 36px
+	span
+		font-size: 45px
+		color: #f03c3c
+.main-search-wrapper
+	display: none
+	position: absolute
+	@media(min-width:580px)
+		position: static
+		display: block
+.main-search 
+	position: relative
+	margin-top: 0
+	font-size: 12px 
+	input, button
+		outline: none
+	input 
+		width: 200px
+		height: 33px
+		border: 1px solid #ececec
+	button 
+		position: absolute
+		top: 7px
+		right: 8px
+		cursor: pointer
+		background-color: #fff
+		border: none
+		color: #d5d5d5
+	@media(min-width:580px)
+		margin-top: 20px
+.nav
+	display: none
+	position: static
+	top: 50px
+	right: 20px
+	text-align: left
+	margin-bottom: 5px
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		position: relative
+		// display: inline-block
+		padding: 5px 0px 5px 0px
+		text-align: right
+		a
+			color: #2b2b2b
+			text-transform: uppercase
+			font-size: 14px
+			font-weight: 500
+			padding: 19px 5px
+			@media(min-width:580px)
+				padding: 19px 20px
+		a:hover
+			color: lighten($red, 20%)
+		.active
+			color: $red
+			font-weight: 700 
+			@media(min-width:580px)
+				border-top: 1px solid  $red
+		@media(min-width:580px)
+			display: inline-block	
+			text-align: left
+			padding: 15px 0px 10px 0px
+			&:after
+				position: absolute
+				content: "|"
+				color: #ececec
+				right: -5px
+	@media(min-width:580px)
+		display: block
+		border-top: 1px solid #ececec
+		
+	@media(min-width:768px)
+		margin-bottom: 20px
+
+.nav-button
+	display: block
+	position: absolute
+	top: 10px
+	right: 20px
+	color: $red
+	width: 30px
+	font-size: 30px
+	@media(min-width:580px)
+		display: none
+.nav-open
+	display: inline
+	@media(min-width:580px)
+		display: block
+		

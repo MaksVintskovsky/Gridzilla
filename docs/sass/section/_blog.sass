@@ -1,0 +1,139 @@
+.blog
+	margin-top: 20px
+	@media(min-width:768px)
+		margin-top: 40px
+.blog .col-sm-6
+	margin: 0 auto 
+	@media(min-width:580px)
+		max-width: 100%
+.page-title
+	font-family: "Chunk Five"
+	font-size: 22px
+	padding: 0 10px
+	margin-bottom: 10px
+	@media(min-width:580px)
+		font-size: 26px
+		padding: 0 20px
+		margin-bottom: 30px
+	@media(min-width:768px)
+		font-size: 30px
+		padding: 0
+.blog-nav	
+	max-width: 280px
+	margin: 15px auto 10px
+	padding: 0
+	list-style-type: none
+	font-size: 12px
+	a:hover
+		color: lighten($red, 20%)
+	li
+		position: relative
+		display: inline-block
+		margin-right: 22px
+		&:after
+			position: absolute
+			content: "/"
+			right: -15px
+		&:last-child
+			margin-right: 0px
+			&:after
+				display: none
+		.active
+			color: $red
+	@media(min-width:420px)
+		max-width: 100%
+	@media(min-width:768px)
+		text-align: left
+		font-size: 14px
+		margin:  0px 0 20px
+.card
+	max-width: 280px
+	margin: 0 auto 
+	img
+		width: 100%
+.card-img__wrapper
+	position: relative
+	&:hover .block-hover
+		opacity: 1
+.card-desc
+	padding: 15px
+	text-align: left
+	border: 1px solid #dbdbdb
+	border-top: none
+	background-color: #FFF 
+	margin-bottom: 20px
+.card-title
+	color: #2e2e2e
+	font-size: 18px
+	font-weight: 700
+	line-height: 18px
+	margin-bottom: 2px
+.card-date
+	color: #8a8a8a
+	font-size: 11px
+	font-weight: 500
+	line-height: 18px
+.card-text
+	color: #2f2f2f
+	font-size: 12px
+	font-weight: 400
+	line-height: 18px
+	margin: 10px 0
+.card-button
+	position: relative
+	display: inline-block
+	color: #2e2e2e
+	font-size: 12px
+	font-weight: 500
+	line-height: 28px
+	margin-left: 25px
+	&:before
+		content: ""
+		position: absolute
+		left: -25px
+		top: 10px
+		height: 10px
+		width: 25px
+		background-image: url('../../img/posts_img/arrow.png')
+		background-repeat: no-repeat
+	&:hover
+		&:before
+			left: -17px
+			transition: 0.3s
+.blog-pagination
+	display: flex
+	margin-top: 15px	
+	a
+		display: inline-block
+		margin-right: 5px
+		width: 26px
+		height: 26px
+		color: #666666
+		font-size: 12px
+		font-weight: 700
+		line-height: 26px
+		border-radius: 4px
+		background-image: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(213, 213, 213) 100%)
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), inset 1px 1px 0 #ffffff, inset 0 0 0 rgba(252, 252, 252, 0.03)
+		&:hover
+			background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 100%)
+	@media(min-width:768px)
+		margin-top: 30px
+	.active
+		background-image: linear-gradient(to bottom, rgb(213, 213, 213) 100%, rgb(230, 230, 230) 100%)
+		box-shadow: 1px 1px 0 #ffffff, inset 1px 1px 3px rgba(0, 0, 0, 0.34), 0 0 0 rgba(0, 0, 0, 0.03)
+.block-hover
+	&__bottom-items
+		display: flex
+		justify-content: space-between
+		position: absolute
+		bottom: 15px
+		width: 100%
+		padding: 0 20px 
+		color: #FFF
+		font-size: 12px
+		img
+			width: auto
+		span
+			display: block
+			
