@@ -26,7 +26,10 @@ $(document).ready(function(){
         var location = window.location.href; // получаем адрес страницы
         var link = this.href;                // получаем адрес ссылки
         if(location == link) {               // при совпадении адреса ссылки и адреса окна
+            $('.nav a').removeClass('active')
             $(this).addClass('active');  //добавляем класс
+        // } else if($('.nav a').hasClass('active')){
+            
         }
     });
     /*::::::::::::: Blog Nav Active links:::::::::::::*/
